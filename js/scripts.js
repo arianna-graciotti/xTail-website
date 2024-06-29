@@ -1,6 +1,4 @@
-// Ensure the DOM is fully loaded before running scripts
 document.addEventListener("DOMContentLoaded", function() {
-
     // Smooth scrolling using jQuery easing
     const navLinks = document.querySelectorAll('a.nav-link');
     navLinks.forEach(link => {
@@ -10,12 +8,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 const hash = this.hash;
 
                 window.scroll({
-                    top: document.querySelector(hash).offsetTop - 70,
+                    top: document.querySelector(hash).offsetTop - 74, // Adjust offset
                     behavior: "smooth"
                 });
 
                 // Add hash to URL after scroll
                 window.location.hash = hash;
+
+                // Collapse the navbar after clicking on a link
+                const navbarToggler = document.querySelector('.navbar-toggler');
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    navbarToggler.click();
+                }
             }
         });
     });
