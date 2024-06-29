@@ -1,0 +1,176 @@
+/* General Styles */
+body {
+    font-family: 'Radley', serif;
+    color: #4B3F2F; /* Dark brown */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #EDEAE0; /* Light earthy tone */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Comfortaa', cursive;
+}
+
+/* Navigation Bar */
+#mainNav {
+    background-color: #70543E; /* Medium brown */
+    padding: 1rem 0;
+}
+.navbar-brand {
+    text-align: center;
+    display: inline-block;
+}
+
+.navbar-brand .brand-sub {
+    display: block;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+#mainNav .navbar-nav {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#mainNav .nav-item {
+    flex: 1;
+    text-align: center;
+}
+
+
+/* Masthead */
+.masthead {
+    background: #EDEAE0; /* Light earthy tone for contrast */
+    padding: 200px 0 100px 0; /* More padding at the top for space between navbar and masthead */
+    color: #333; /* Darker text color */
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.masthead-content {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    flex-wrap: nowrap; /* Ensure content doesn't wrap and cause layout issues */
+}
+
+.masthead-logo {
+    height: 10rem; /* Smaller height for full-screen mode */
+    max-height: 10rem; /* Adjust the height to match the text */
+    margin-right: 20px; /* Space between the logo and text */
+    margin-bottom: 20px; /* Add more space to ensure the logo doesn't get cut off */
+}
+
+.masthead-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.masthead-subheading {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .masthead {
+        padding: 50px 0; /* More padding for smaller screens */
+    }
+
+    .masthead-content {
+        flex-direction: column; /* Stack the logo and text vertically on smaller screens */
+        align-items: center;
+        text-align: center;
+    }
+
+    .masthead-logo {
+        height: auto;
+        max-height: 8rem; /* Adjust for smaller screens */
+        margin-right: 0;
+        margin-bottom: 20px; /* Add space between logo and text */
+    }
+
+    .masthead-heading {
+        font-size: 2rem;
+        white-space: normal; /* Allow text to wrap */
+    }
+
+    .masthead-subheading {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .masthead {
+        padding: 30px 0; /* More padding for smaller screens */
+    }
+
+    .masthead-heading {
+        font-size: 1.8rem;
+    }
+
+    .masthead-subheading {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .masthead {
+        padding: 20px 0; /* More padding for smaller screens */
+    }
+
+    .masthead-heading {
+        font-size: 1.5rem;
+    }
+
+    .masthead-subheading {
+        font-size: 0.9rem;
+    }
+
+    .masthead-logo {
+        height: auto;
+        max-height: 6rem; /* Adjust for smaller screens */
+        margin-bottom: 20px; /* Ensure there's space to prevent cutting off */
+    }
+}
+
+.masthead .abstract-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 20px; /* Adjust spacing as needed */
+    color: #333; /* Adjust text color as needed */
+}
+
+.masthead .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #70543E; /* Medium brown */
+    border: none;
+    margin-top: 20px;
+}
+
+.masthead .btn:hover {
+    background-color: #4B3F2F; /* Dark brown */
+}
+
+/*pages*/
+
+.page-section {
+    padding: 20px 0; /* Adjust the padding value as needed */
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+.text-content {
+    margin-top: 20px;
+}
+
