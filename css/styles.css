@@ -38,11 +38,10 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-
 /* Masthead */
 .masthead {
     background: #EDEAE0; /* Light earthy tone for contrast */
-    padding: 200px 0 100px 0; /* More padding at the top for space between navbar and masthead */
+    padding: 250px 0 100px 0; /* More padding at the top for space between navbar and masthead */
     color: #333; /* Darker text color */
     text-align: left;
     display: flex;
@@ -53,24 +52,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .masthead-content {
-    display: flex;
-    align-items: center;
     text-align: left;
-    flex-wrap: nowrap; /* Ensure content doesn't wrap and cause layout issues */
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the table horizontally */
+}
+
+.masthead-table {
+    width: auto;
+    border-spacing: 20px;
+    margin: 0 auto; /* Center the table */
+    table-layout: fixed; /* Ensure table layout is flexible */
+}
+
+.masthead-logo-cell {
+    width: 10rem;
+    vertical-align: middle;
 }
 
 .masthead-logo {
-    height: 10rem; /* Smaller height for full-screen mode */
-    max-height: 10rem; /* Adjust the height to match the text */
-    margin-right: 20px; /* Space between the logo and text */
-    margin-bottom: 20px; /* Add more space to ensure the logo doesn't get cut off */
+    width: 100%;
+    height: auto;
+    max-width: 10rem; /* Adjust the width to match the text */
 }
 
 .masthead-heading {
     font-size: 2.5rem;
     font-weight: 700;
     margin: 0;
-    white-space: nowrap; /* Prevent text from wrapping */
+    white-space: normal; /* Allow text to wrap */
+    overflow: hidden; /* Ensure text does not overflow */
 }
 
 .masthead-subheading {
@@ -81,20 +92,17 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 992px) {
     .masthead {
-        padding: 50px 0; /* More padding for smaller screens */
+        padding: 100px 0; /* More padding for smaller screens */
     }
 
-    .masthead-content {
-        flex-direction: column; /* Stack the logo and text vertically on smaller screens */
-        align-items: center;
-        text-align: center;
+    .masthead-table {
+        width: 100%;
+        border-spacing: 10px;
     }
 
     .masthead-logo {
         height: auto;
-        max-height: 8rem; /* Adjust for smaller screens */
-        margin-right: 0;
-        margin-bottom: 20px; /* Add space between logo and text */
+        max-width: 8rem; /* Adjust for smaller screens */
     }
 
     .masthead-heading {
@@ -109,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
     .masthead {
-        padding: 30px 0; /* More padding for smaller screens */
+        padding: 70px 0; /* More padding for smaller screens */
     }
 
     .masthead-heading {
@@ -123,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 576px) {
     .masthead {
-        padding: 20px 0; /* More padding for smaller screens */
+        padding: 100px 0 50px 0; /* Increase padding at the top */
     }
 
     .masthead-heading {
@@ -136,8 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .masthead-logo {
         height: auto;
-        max-height: 6rem; /* Adjust for smaller screens */
-        margin-bottom: 20px; /* Ensure there's space to prevent cutting off */
+        max-width: 6rem; /* Adjust for smaller screens */
     }
 }
 
@@ -160,10 +167,49 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #4B3F2F; /* Dark brown */
 }
 
+/* Alternating section colors */
+.page-section:nth-of-type(odd) {
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.page-section:nth-of-type(even) {
+    background-color: #EDEAE0; /* Light earthy tone */
+}
+
+/* Organizer cards smaller on small screens */
+@media (max-width: 576px) {
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .card img {
+        max-width: 60%;
+        height: auto;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+}
+
 /*pages*/
 
 .page-section {
-    padding: 20px 0; /* Adjust the padding value as needed */
+    padding: 110px 0 20px 0; /* Added 110px top padding */
 }
 
 .bg-light {
@@ -173,4 +219,3 @@ h1, h2, h3, h4, h5, h6 {
 .text-content {
     margin-top: 20px;
 }
-
