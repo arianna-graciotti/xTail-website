@@ -24,6 +24,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (navbarCollapse.classList.contains('show')) {
                     navbarToggler.click();
                 }
+
+                // Collapse the navbar after clicking on a link
+                const navbarToggler = document.querySelector('.navbar-toggler');
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    navbarToggler.click();
+                }
             }
         });
     });
