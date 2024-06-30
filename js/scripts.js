@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Smooth scrolling using jQuery easing
     const navLinks = document.querySelectorAll('a.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', function(event) {
@@ -7,23 +6,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 event.preventDefault();
                 const hash = this.hash;
 
-                // Adjust the offset value here
                 const offset = 90; // Adjusted to match the navbar height
 
                 window.scroll({
-                    top: document.querySelector(hash).offsetTop - offset, // Adjust offset
+                    top: document.querySelector(hash).offsetTop - offset,
                     behavior: "smooth"
                 });
 
                 // Add hash to URL after scroll
                 window.location.hash = hash;
-
-                // Collapse the navbar after clicking on a link
-                const navbarToggler = document.querySelector('.navbar-toggler');
-                const navbarCollapse = document.querySelector('.navbar-collapse');
-                if (navbarCollapse.classList.contains('show')) {
-                    navbarToggler.click();
-                }
 
                 // Collapse the navbar after clicking on a link
                 const navbarToggler = document.querySelector('.navbar-toggler');
