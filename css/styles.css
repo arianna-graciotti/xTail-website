@@ -244,3 +244,31 @@ h1, h2, h3, h4, h5, h6 {
 .text-content {
     margin-top: 20px;
 }
+
+/* Footer Styling */
+.footer {
+    background-color: #70543E; /* Optional: Change to your desired footer background color */
+    color: #fff; /* Footer text color */
+    text-align: center;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .col-lg-12 {
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow if the content is too long */
+    text-overflow: ellipsis; /* Add ellipsis if the text is too long */
+}
+
+.footer a {
+    color: #fff; /* Link color set to white */
+    text-decoration: underline; /* Optional: Add underline to distinguish the link */
+}
+
+.footer a:hover {
+    color: #ddd; /* Optional: Change color on hover for better UX */
+    text-decoration: none; /* Optional: Remove underline on hover */
+}
