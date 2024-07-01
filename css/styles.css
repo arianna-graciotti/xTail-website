@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .masthead-subheading {
-        font-size: 1rem;
+        font-size: rem;
     }
 }
 
@@ -260,4 +260,15 @@ h1, h2, h3, h4, h5, h6 {
 .footer a:hover {
     color: #ddd; /* Optional: Change color on hover for better UX */
     text-decoration: none; /* Optional: Remove underline on hover */
+}
+
+.alert {
+    background-color: #F5F3E7; /* Light beige background color */
+    color: #4B3F2F; /* Dark brown text color */
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #DED9C4; /* Slightly darker beige for border */
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 20px;
 }
