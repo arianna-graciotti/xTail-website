@@ -54,12 +54,4 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Alert for Submit Papers button
-    const submitButton = document.querySelector(".btn-primary.mx-1");
-    if (submitButton) {
-        submitButton.addEventListener("click", function(event) {
-            event.preventDefault();
-            alert('The submission link is not ready yet. Please check back later.');
-        });
-    }
 });
