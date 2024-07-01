@@ -1,27 +1,21 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('a.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', function(event) {
             if (this.hash !== "") {
                 event.preventDefault();
                 const hash = this.hash;
-
-                const offset = 90; // Adjusted to match the navbar height
+                const targetElement = document.querySelector(hash);
+                const offset = 90; // Adjust to match the navbar height
 
                 window.scroll({
-                    top: document.querySelector(hash).offsetTop - offset,
+                    top: targetElement.offsetTop - offset,
                     behavior: "smooth"
                 });
 
-                // Add hash to URL after scroll
-                window.location.hash = hash;
-
-                // Collapse the navbar after clicking on a link
-                const navbarToggler = document.querySelector('.navbar-toggler');
-                const navbarCollapse = document.querySelector('.navbar-collapse');
-                if (navbarCollapse.classList.contains('show')) {
-                    navbarToggler.click();
-                }
+                // Update the URL hash without affecting the browser history
+                history.replaceState(null, null, hash);
             }
         });
     });
@@ -45,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (mainNav) {
         new bootstrap.ScrollSpy(document.body, {
             target: '#mainNav',
-            offset: 90 // Adjusted to match the navbar height
+            offset: 90 // Adjust to match the navbar height
         });
     }
 
@@ -59,11 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-});
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Existing code...
-    
     // Alert for Submit Papers button
     const submitButton = document.querySelector(".btn-primary.mx-1");
     if (submitButton) {
