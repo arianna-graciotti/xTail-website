@@ -167,7 +167,50 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #4B3F2F; /* Dark brown */
 }
 
-/* Alternating section colors */
+/* Ensure images in the organizing committee section are properly rescaled */
+#team .card {
+    height: 100%; /* Ensure all cards are the same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out the content */
+    text-align: center; /* Center text */
+}
+
+#team .card img {
+    width: 100%;
+    height: 300px; /* Fixed height to ensure uniformity */
+    object-fit: cover; /* Ensures the image covers the space without stretching */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Organizer cards smaller on small screens */
+@media (max-width: 576px) {
+    #team .card {
+        width: 90%; /* Reduce size for smaller screens */
+        margin-bottom: 20px;
+        padding: 10px; /* Add padding for better spacing */
+        margin: 0 auto; /* Center the card */
+    }
+
+    #team .card img {
+        max-width: 80%; /* Reduce size for smaller screens */
+        height: auto;
+        margin: 0 auto; /* Center the image horizontally */
+    }
+}
+
+/* Font size adjustments for better readability */
+.text-content {
+    font-size: 1.2rem; /* Increase the font size */
+}
+
+/* Enhance bold text */
+.text-content strong {
+    font-weight: 700; /* Increase font weight */
+    color: #000; /* Change color to make it more evident */
+}
+
+/* Ensure alternating background colors */
 .page-section:nth-of-type(odd) {
     background-color: #f8f9fa; /* Light background color */
 }
@@ -176,38 +219,20 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #EDEAE0; /* Light earthy tone */
 }
 
-/* Organizer cards smaller on small screens */
-@media (max-width: 576px) {
-    .card {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .card-body {
-        padding: 10px;
-    }
-
-    .card-title {
-        font-size: 1rem;
-    }
-
-    .card-text {
-        font-size: 1rem;
-    }
-
-    .card img {
-        max-width: 60%;
-        height: auto;
-    }
-
-    .btn {
-        font-size: 1rem;
-        padding: 5px 10px;
-    }
+/* Specific styles to ensure alternating colors for Program, Program Committee, and Keynote Speakers */
+#Program {
+    background-color: #f8f9fa; /* Ensure this section gets the alternating color */
 }
 
-/*pages*/
+#pc {
+    background-color: #EDEAE0; /* Ensure this section gets the alternating color */
+}
 
+#speakers {
+    background-color: #f8f9fa; /* Ensure this section gets the alternating color */
+}
+
+/* Pages */
 .page-section {
     padding: 110px 0 20px 0; /* Added 110px top padding */
 }
