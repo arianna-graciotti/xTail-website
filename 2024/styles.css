@@ -1,0 +1,337 @@
+/* General Styles */
+body {
+    font-family: 'Radley', serif;
+    color: #4B3F2F; /* Dark brown */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #EDEAE0; /* Light earthy tone */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Comfortaa', cursive;
+}
+
+/* Navigation Bar */
+#mainNav {
+    background-color: #70543E; /* Medium brown */
+    padding: 1rem 0;
+}
+.navbar-brand {
+    text-align: center;
+    display: inline-block;
+}
+
+.navbar-brand .brand-sub {
+    display: block;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+#mainNav .navbar-nav {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#mainNav .nav-item {
+    flex: 1;
+    text-align: center;
+}
+
+/* Masthead */
+.masthead {
+    background: #EDEAE0; /* Light earthy tone for contrast */
+    padding: 200px 0 100px 0; /* Increased padding */
+    color: #333; /* Darker text color */
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.masthead-content {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the table horizontally */
+}
+
+.masthead-table {
+    width: auto;
+    border-spacing: 20px;
+    margin: 0 auto; /* Center the table */
+    table-layout: fixed; /* Ensure table layout is flexible */
+}
+
+.masthead-logo-cell {
+    width: 10rem;
+    vertical-align: middle;
+}
+
+.masthead-logo {
+    width: 100%;
+    height: auto;
+    max-width: 10rem; /* Adjust the width to match the text */
+}
+
+.masthead-heading {
+    font-size: 3rem; /* Increased font size */
+    font-weight: 700;
+    margin: 0;
+    white-space: normal; /* Allow text to wrap */
+    overflow: hidden; /* Ensure text does not overflow */
+}
+
+.masthead-subheading {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .masthead {
+        padding: 150px 0; /* Adjust padding for smaller screens */
+    }
+
+    .masthead-heading {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .masthead-subheading {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .masthead {
+        padding: 120px 0; /* Adjust padding for smaller screens */
+    }
+
+    .masthead-heading {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .masthead-subheading {
+        font-size: rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .masthead {
+        padding: 100px 0 50px 0; /* Adjust padding for smaller screens */
+    }
+
+    .masthead-heading {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
+
+    .masthead-subheading {
+        font-size: 0.9rem;
+    }
+
+    .masthead-logo {
+        height: auto;
+        max-width: 6rem; /* Adjust for smaller screens */
+    }
+}
+
+.masthead .abstract-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 20px; /* Adjust spacing as needed */
+    color: #333; /* Adjust text color as needed */
+}
+
+.masthead .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #70543E; /* Medium brown */
+    border: none;
+    margin-top: 20px;
+}
+
+.masthead .btn:hover {
+    background-color: #4B3F2F; /* Dark brown */
+}
+
+/* Ensure images in the organizing committee section are properly rescaled */
+#team .card {
+    height: 100%; /* Ensure all cards are the same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out the content */
+    text-align: center; /* Center text */
+}
+
+#team .card img {
+    width: 100%;
+    height: 300px; /* Fixed height to ensure uniformity */
+    object-fit: cover; /* Ensures the image covers the space without stretching */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Organizer cards smaller on small screens */
+@media (max-width: 576px) {
+    #team .card {
+        width: 90%; /* Reduce size for smaller screens */
+        margin-bottom: 20px;
+        padding: 10px; /* Add padding for better spacing */
+        margin: 0 auto; /* Center the card */
+    }
+
+    #team .card img {
+        max-width: 80%; /* Reduce size for smaller screens */
+        height: auto;
+        margin: 0 auto; /* Center the image horizontally */
+    }
+}
+
+/* Font size adjustments for better readability */
+.text-content {
+    font-size: 1.2rem; /* Increase the font size */
+}
+
+/* Enhance bold text */
+.text-content strong {
+    font-weight: 700; /* Increase font weight */
+    color: #000; /* Change color to make it more evident */
+}
+
+/* Ensure alternating background colors */
+.page-section:nth-of-type(odd) {
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.page-section:nth-of-type(even) {
+    background-color: #EDEAE0; /* Light earthy tone */
+}
+
+/* Specific styles to ensure alternating colors for Program, Program Committee, and Keynote Speakers */
+#Program {
+    background-color: #f8f9fa; /* Ensure this section gets the alternating color */
+}
+
+#pc {
+    background-color: #EDEAE0; /* Ensure this section gets the alternating color */
+}
+
+#speakers {
+    background-color: #f8f9fa; /* Ensure this section gets the alternating color */
+}
+
+/* Pages */
+.page-section {
+    padding: 80px 0 40px 0; /* Increased padding for all sections */
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+.text-content {
+    margin-top: 20px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #70543E; /* Optional: Change to your desired footer background color */
+    color: #fff; /* Optional: Change to your desired footer text color */
+    text-align: center;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .col-lg-12 {
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow if the content is too long */
+    text-overflow: ellipsis; /* Add ellipsis if the text is too long */
+}
+
+.footer a {
+    color: #fff; /* Link color set to white */
+    text-decoration: underline; /* Optional: Add underline to distinguish the link */
+}
+
+.footer a:hover {
+    color: #ddd; /* Optional: Change color on hover for better UX */
+    text-decoration: none; /* Optional: Remove underline on hover */
+}
+
+.alert {
+    background-color: #F5F3E7; /* Light beige background color */
+    color: #4B3F2F; /* Dark brown text color */
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #DED9C4; /* Slightly darker beige for border */
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Keynote speaker image adjustments */
+.keynote-img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+
+/* Keynote speaker card adjustments */
+#speakers .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#speakers .card img {
+    width: 65%;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+#speakers .card-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+#speakers .card-text {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+#speakers .btn-group .btn {
+    margin: 0 5px;
+}
+
+#speakers .collapse {
+    margin-top: 10px;
+}
+
+#speakers .card .btn {
+    margin: 5px 0;
+}
+
+
+#dates del {
+    color: #ff0000; /* Red color for struck-through text */
+    text-decoration: line-through;
+}
+
+#dates strong {
+    font-weight: bold;
+}
+
+.announcement {
+    font-size: 1.5rem; /* Larger font size */
+    font-weight: bold; /* Optional: make it bold */
+}

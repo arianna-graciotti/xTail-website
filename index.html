@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>X-TAIL Workshop</title>
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700|Radley" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet" />
-</head>
+    <head>
+        <!-- Open Graph / LinkedIn -->
+        <meta property="og:title" content="X-TAIL Workshop 2026" />
+        <meta property="og:description" content="eXtraction and eXploitation of long-tail knowledge with LLMs and KGs" />
+        <meta property="og:image" content="https://www.xtail-workshop.org/img/logo.png" />
+        <meta property="og:url" content="https://www.xtail-workshop.org" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.xtail-workshop.org/img/logo-adjusted.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="627" />
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>X-TAIL Workshop 2026</title>
+        <!-- Favicon -->
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/android-chrome-512x512.png" type="image/png">
+        <link rel="icon" href="img/apple-touch-icon.png" type="image/png">
+        <link rel="icon" href="img/favicon-16x16.png" type="image/png">
+        <link rel="icon" href="img/favicon-32x32.png" type="image/png">
+
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa:700|Radley" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Custom CSS -->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="74">
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
         <a class="navbar-brand" href="#page-top">
             <strong>X-TAIL</strong><span class="brand-sub">workshop</span>
-        </a>        
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i class="fas fa-bars ms-1"></i>
@@ -33,9 +50,19 @@
                 <li class="nav-item"><a class="nav-link" href="#dates">Important Dates</a></li>
                 <li class="nav-item"><a class="nav-link" href="#team">Organising Committee</a></li>
                 <li class="nav-item"><a class="nav-link" href="#pc">Program Committee</a></li>
-                <li class="nav-item"><a class="nav-link" href="#Program">Program</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Program">Workshop Program</a></li>
                 <li class="nav-item"><a class="nav-link" href="#speakers">Keynote Speakers</a></li>
-                <li class="nav-item"><a class="nav-link" href="#con">Contact</a></li> 
+                <li class="nav-item"><a class="nav-link" href="#con">Contact</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Editions
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item active" href="#">X-TAIL 2026</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="2024/">X-TAIL 2024</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
@@ -56,15 +83,19 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="masthead-subheading">1st Workshop co-located with <a href="https://ekaw.org/">EKAW 2024</a>, Amsterdam, The Netherlands</td>
+                    <td class="masthead-subheading">2nd Workshop co-located with EKAW 2026, Universiy of Turin, Turin, Italy</td>
                 </tr>
             </table>
         </div>
         <div class="d-flex justify-content-center">
-            <a href="https://www.linkedin.com/in/arianna-graciotti/" class="btn btn-primary mx-1">Submit Papers</a>
+            <button onclick="alert('The submission link is not ready yet. Please check back later.')" class="btn btn-primary mx-1 mt-4">Submit Papers</button>
         </div>
+        <!--div class="d-flex justify-content-center">
+            <a href="#" target="_blank" class="btn btn-primary mx-1 mt-4">Submit Papers</a>
+        </div-->
     </div>
 </header>
+
 
 <!-- About Section -->
 <section class="page-section" id="about">
@@ -72,10 +103,8 @@
         <div class="text-center">
             <h2 class="section-heading text-uppercase">About</h2>
         </div>
-        <div>
-            <p><strong>Large Language Models (LLMs)</strong> store extensive knowledge within their parameters, easily accessible through natural language interaction. However, they struggle when probed for <strong>long-tail knowledge</strong> (information rarely encountered during training). Conversely, <strong>Knowledge Graphs (KGs)</strong> excel at structuring specialized information but are often incomplete. Automatically enriching KGs with data from non-standard unstructured sources, such as domain-specific, non-contemporary, or low-resourced language documents, poses significant challenges. Leveraging the parametric knowledge of LLMs and the authoritative knowledge stored in KGs could advance long-tail knowledge extraction and enhance its exploitation.</p>
-            <p>The first edition of <strong>“X-TAIL, eXtraction and eXploitation of long-TAIL knowledge”</strong> aims to attract researchers and practitioners operating at the intersection of KGs and Generative AI. X-TAIL offers an opportunity to engage in interdisciplinary discussions focusing on non-standard sources or working on methods and tools designed to aid in such scenarios.</p>
-            <p>This workshop accepts contributions on several topics, such as (but not limited to): knowledge-enhanced usage of LLMs for long-tail knowledge extraction from text, knowledge-augmented entity linking for long-tail entities, investigations on the impact of popularity and other biases on what LLMs memorise, multi-modal Retrieval-augmented Generation (RAG) techniques to mitigate those biases (especially exploiting structured sources as KGs), natural language queries over KGs through RAG, etc.</p>
+        <div class="text-content">
+            <p><strong>Large Language Models (LLMs)</strong> encode world knowledge through pre-training on massive datasets, making them the backbone of knowledge extraction applications. Their reliability degrades on <strong>long-tail knowledge</strong>: low-popularity knowledge that occurs infrequently in pre-training data. Popularity is <strong>not neutral</strong>: pre-training datasets are predominantly web-crawled and, as such, are generalist, English-centric, and mostly produced over the past 30 years by <strong>Western, High-income, Educated, Liberal, Male-dominated (WHELM)</strong> communities, raising the risk of models underperforming on specialized domains, non-English languages and non-contemporary times sources, and on knowledge belonging to marginalized social groups. <strong>Retrieval-Augmented Generation (RAG)</strong> has been proposed as a mitigation, but corpora used for retrieval may still be biased. <strong>Knowledge Graphs (KGs)</strong> provide a more transparent and deterministic alternative, yet open-domain KGs such as Wikidata exhibit coverage gaps along the same dimensions. The <strong>X-TAIL</strong> workshop aims to advance research on extracting, exploiting, and ultimately preserving long-tail knowledge.</p>
         </div>
     </div>
 </section>
@@ -86,61 +115,61 @@
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Call for Papers</h2>
         </div>
-        <h2>Topics of interest</h2>
         <div class="text-content">
-            <p>This workshop accepts contributions on several topics, such as (but not limited to): knowledge-enhanced usage of LLMs for long-tail knowledge extraction from text, knowledge-augmented entity linking for long-tail entities, investigations on the impact of popularity and other biases on what LLMs memorise, multi-modal Retrieval-augmented Generation (RAG) techniques to mitigate those biases (especially exploiting structured sources as KGs), natural language queries over KGs through RAG, etc.</p>
-
-            <p>The main topics of interest are:<p>
+            <p class="alert"><strong>The Call for Papers will be announced soon.</strong></p>
+            <p>The main topics of interest include:</p>
             <ul>
-                <li><strong>Knowledge Extraction from non-standard unstructured sources:</strong>
+                <li><strong>Head and tail knowledge definition</strong>: operationalisation and computation of <strong>knowledge popularity</strong></li>
+                <li><strong>Knowledge Extraction (KE)</strong> from <strong>long-tail sources</strong>:
                     <ul>
-                        <li>Relation extraction</li>
-                        <li>Entity Linking for long-tail entities</li>
-                        <li>KG completion techniques for long-tail entities</li>
+                        <li><strong>Tasks</strong>: Relation Extraction, Entity Linking, Knowledge Graph (KG) generation, Question Answering</li>
+                        <li><strong>Non-conventional source types</strong>, such as for example: domain-specific, multilingual, historical, related to marginalised social groups</li>
+                        </li>
                     </ul>
                 </li>
-                <li><strong>Knowledge Probing:</strong>
-                    <ul>
-                        <li>Investigations on biases hindering memorisation and generalisation capabilities of LLMs</li>
-                        <li>Knowledge retention biases mitigation through KGs</li>
-                    </ul>
+                <li><strong>Context-augmented methods</strong> optimised for long-tail knowledge, such as Retrieval-Augmented Generation (RAG) and Knowledge-Augmented Generation (KAG)
                 </li>
-                <li><strong>Development and combined use of LLMs and KGs in domain-specific data, for instance, but not limited to:</strong>
-                    <ul>
-                        <li>Cultural Heritage preservation</li>
-                        <li>Digital humanities, sustainability, and industry-related applications</li>
-                    </ul>
-                </li>
-                <li><strong>Multi-modal Retrieval-augmented Generation (RAG) techniques:</strong>
-                    <ul>
-                        <li>Advanced question answering, search engines, content creation and summarisation, conversational agents and chatbots, information retrieval and knowledge engines with RAG on structured and unstructured sources</li>
-                        <li>Natural language queries over KGs through RAG</li>
-                        <li>Text generation systems based on KGs and/or LLMs through RAG</li>
-                    </ul>
-                </li>
+                <li><strong>Knowledge Graph (KG) generation and completion</strong> for mitigating <strong>coverage gaps</strong> in existing knowledge bases</li>
+                <li><strong>Computational methods</strong> for long-tail knowledge processing in <strong>specialised domains</strong>, such as Health, Law, Finance, Sustainability, Digital Humanities, Computational Literary Studies, Computational History, etc.</li>
+                <li>Impact of <strong>multilingualism</strong> on model performance on long-tail knowledge</li>
+                <li><strong>Long-tail knowledge representation</strong> in ontologies and Knowledge Graphs (KGs)</li>
+                <li><strong>Benchmarks</strong> that systematically address biases of both Large Language Models (LLMs) and Knowledge Graphs (KGs) on knowledge related, for example, to specialised domains, to low-resourced languages and cultures or marginalised social groups, and historical data.</li>
+                <li><strong>Error analysis</strong> of system performance stratified by knowledge popularity and its intersection with domain, language, social group, and time dimensions.</li>
+                <li><strong>Negative results</strong> on methods developed to mitigate underperformance on long-tail knowledge</li>
+                <li>Studies of <strong>harms</strong> perpetuated by popularity-driven knowledge hierarchies learned by Large Language Models (LLMs) and reflected in Knowledge Graphs (KGs)</li>
+            </ul>
+            <p>Submission <strong>format</strong> and <strong>guidelines</strong>:</p>
+            <ul>
+                <li><strong>Papers must be submitted in PDF format</strong> according to the <a href="https://www.overleaf.com/latex/templates/template-for-submissions-to-ceur-workshop-proceedings-ceur-ws-dot-org/wqyfdgftmcfw" target="_blank">CEUR-WS template</a> published in the CEUR-WS guidelines.</li>
+                <li><strong>Long papers</strong> should be <strong>up to 8 pages</strong>, excluding references.</li>
+                <li><strong>Short papers</strong> should be <strong>up to  pages</strong>, including references.</li>
+                <li><strong>Workshop papers must be self-contained and in English.</strong></li>
+                <!--li><strong>At least one author of each accepted workshop paper has to register for the conference.</strong></li-->
+                <!--li><strong>Workshop attendance is only granted to registered conference participants.</strong></li-->
             </ul>
         </div>
     </div>
 </section>
 
+
 <!-- Important Dates Section -->
-<section class="page-section bg-light" id="dates">
+<section class="page-section" id="dates">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Important Dates</h2>
         </div>
         <div class="text-content">
-            <h2>Upcoming deadlines</h2>
             <ul>
-                <li><strong>Workshop Papers Submission Deadline:</strong> September 17, 2024</li>
-                <li><strong>Workshop Papers Notification:</strong> October 15, 2024</li>
-                <li><strong>Early Bird Registration:</strong> October 17, 2024</li>
-                <li><strong>Workshop Papers Camera Ready:</strong> November 20, 2024</li>
-                <li><strong>Conference Days:</strong> November 26-28, 2024</li>
+                <li><strong>Workshop Papers Submission Deadline:</strong> July 26, 2026 </li>
+                <li><strong>Workshop Papers Notification:</strong> August 31, 2026 </li>
+                <li><strong>Workshop Papers Camera Ready:</strong> September 20, 2026</li>
+                <li><strong>Workshop Day:</strong> September 29, 2026</li>
+                <p class="alert announcement"><strong>All deadlines are to be considered 23:59 AoE.</strong></p>
             </ul>
         </div>
     </div>
 </section>
+
 
 <!-- Organising Committee Section -->
 <section class="page-section" id="team">
@@ -148,63 +177,107 @@
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Organising Committee</h2>
         </div>
-        <div class="text-content">
-            <div class="row mt-5">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                    <h2>Organizers</h2>
-                    <div class="row">
-                        <!-- First Card -->
-                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-2">
-                            <div class="card text-center">
-                                <div class="card-body">
-                                    <h5 class="card-title"><strong>Arianna Graciotti</strong></h5>
-                                    <img src="img/arianna_graciotti.jpeg" class="card-img-top" alt="Arianna Graciotti picture">
-                                    <p class="card-text">University of Bologna <br /> Italy</p>
-                                    <div class="d-flex justify-content-center">
-                                        <a href="https://www.linkedin.com/in/arianna-graciotti/" class="btn btn-primary mx-1">Webpage</a>
-                                        <a href="https://www.unibo.it/sitoweb/arianna.graciotti/en" class="btn btn-primary mx-1">E-mail</a>
+        <div class="row mt-5 justify-content-center">
+            <!-- Lia Draetta -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-2">
+                <div class="card text-center h-100">
+                    <img src="img/lia_draetta.jpg" class="card-img-top" alt="Lia Draetta">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"><strong>Lia Draetta</strong></h5>
+                        <p class="card-text">University of Turin<br>Italy</p>
+                        <div class="accordion mt-3" id="accordionDraetta">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDraetta" aria-expanded="false" aria-controls="collapseDraetta">Bio</button>
+                                </h2>
+                                <div id="collapseDraetta" class="accordion-collapse collapse" data-bs-parent="#accordionDraetta">
+                                    <div class="accordion-body text-start">
+                                        Lia Draetta is a PhD student in the Computer Science Department at the University of Turin, Italy, with a background in linguistics. Her research focuses on under-representation and bias in data sources, and on how large language models handle rare entities and marginalised communities. She is also interested in knowledge graphs and methodologies to integrate structured knowledge into LLMs, with a focus on long-tail and underrepresented entities.
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Second Card -->
-                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-2">
-                            <div class="card text-center">
-                                <div class="card-body">
-                                    <h5 class="card-title"><strong>Alba Morales Tirado</strong></h5>
-                                    <img src="img/alba.jpeg" class="card-img-top" alt="Alba Morales Tirado picture">
-                                    <p class="card-text">Knowledge Media institute - Open University <br /> United Kingdom</p>
-                                    <div class="d-flex justify-content-center">
-                                        <a href="" class="btn btn-primary mx-1">LinkedIn</a>
-                                        <a href="" class="btn btn-primary mx-1">Affiliation Page</a>
+                        <div class="mt-auto pt-2">
+                            <a href="https://www.linkedin.com/in/lia-draetta-67443a15b/" target="_blank" class="btn btn-primary mx-1">Webpage</a>
+                            <a href="mailto:lia.draetta@unito.it" class="btn btn-primary mx-1">E-mail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Arianna Graciotti -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-2">
+                <div class="card text-center h-100">
+                    <img src="img/arianna_graciotti.jpg" class="card-img-top" alt="Arianna Graciotti">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"><strong>Arianna Graciotti</strong></h5>
+                        <p class="card-text">University of Groningen<br>Netherlands</p>
+                        <div class="accordion mt-3" id="accordionGraciotti">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGraciotti" aria-expanded="false" aria-controls="collapseGraciotti">Bio</button>
+                                </h2>
+                                <div id="collapseGraciotti" class="accordion-collapse collapse" data-bs-parent="#accordionGraciotti">
+                                    <div class="accordion-body text-start">
+                                        Arianna Graciotti is a post-doctoral researcher in Natural Language Processing, Semantic Web and Digital Humanities at the University of Groningen, Netherlands. With a background in computational linguistics, her research focuses on combining LLMs and KGs to work with long-tail knowledge in Humanities and Cultural Heritage data. She has co-organised SemDH 2025 and the X-TAIL workshop at EKAW 2024.
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Third Card -->
-                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-2">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title"><strong>Card title</strong></h5>
-                                    <img src="..." class="card-img-top" alt="...">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="mt-auto pt-2">
+                            <a href="https://www.linkedin.com/in/arianna-graciotti/" target="_blank" class="btn btn-primary mx-1">Webpage</a>
+                            <a href="mailto:a.graciotti@rug.nl" class="btn btn-primary mx-1">E-mail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Enrico Daga -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-2">
+                <div class="card text-center h-100">
+                    <img src="img/enrico_daga_picture.jpg" class="card-img-top" alt="Enrico Daga">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"><strong>Enrico Daga</strong></h5>
+                        <p class="card-text">The Open University<br>United Kingdom</p>
+                        <div class="accordion mt-3" id="accordionDaga">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDaga" aria-expanded="false" aria-controls="collapseDaga">Bio</button>
+                                </h2>
+                                <div id="collapseDaga" class="accordion-collapse collapse" data-bs-parent="#accordionDaga">
+                                    <div class="accordion-body text-start">
+                                        Enrico Daga is a Senior Research Fellow at the Knowledge Media Institute of The Open University, UK, focusing on combining LLMs and KGs for knowledge extraction in digital humanities and social sciences. He researches and promotes façade-based data access for querying heterogeneous data in SPARQL, and chairs the W3C Data Façades Community Group. He has co-organised numerous workshops within the Semantic Web community.
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Fourth Card -->
-                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-2">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title"><strong>Card title</strong></h5>
-                                    <img src="..." class="card-img-top" alt="...">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="mt-auto pt-2">
+                            <a href="https://profiles.open.ac.uk/enrico-daga" target="_blank" class="btn btn-primary mx-1">Webpage</a>
+                            <a href="mailto:enrico.daga@open.ac.uk" class="btn btn-primary mx-1">E-mail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Aidan Hogan -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-2">
+                <div class="card text-center h-100">
+                    <img src="img/aidan_hogan_picture.png" class="card-img-top" alt="Aidan Hogan">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"><strong>Aidan Hogan</strong></h5>
+                        <p class="card-text">DCC, Universidad de Chile<br>Chile</p>
+                        <div class="accordion mt-3" id="accordionHogan">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHogan" aria-expanded="false" aria-controls="collapseHogan">Bio</button>
+                                </h2>
+                                <div id="collapseHogan" class="accordion-collapse collapse" data-bs-parent="#accordionHogan">
+                                    <div class="accordion-body text-start">
+                                        Aidan Hogan is a professor in the Department of Computer Science (DCC) at the Universidad de Chile, and an Associate Researcher of the Millennium Institute for Foundational Research on Data (IMFD). His research focuses on querying Knowledge Graphs, with emphasis on indexing, query optimization, reasoning, and interfaces. He has participated in the organization of dozens of workshops and conferences on related topics.
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="mt-auto pt-2">
+                            <a href="https://aidanhogan.com/" target="_blank" class="btn btn-primary mx-1">Webpage</a>
+                            <a href="mailto:ahogan@dcc.uchile.cl" class="btn btn-primary mx-1">E-mail</a>
                         </div>
                     </div>
                 </div>
@@ -214,61 +287,76 @@
 </section>
 
 <!-- Program Committee Section -->
-<section class="page-section bg-light" id="pc">
+<section class="page-section" id="pc">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Program Committee</h2>
         </div>
         <div class="text-content">
-            <p>The Program Committee for the workshop consists of researchers and practitioners from various institutions. Below is the list of Program Committee members:</p>
             <ul>
-                <li><strong>Aldo Gangemi</strong>, University of Bologna, Italy</li>
                 <li><strong>Andrea Schimmenti</strong>, University of Bologna, Italy</li>
-                <li><strong>Andrea Zugarini</strong>, expert.ai, Italy</li>
-                <li><strong>Angelo Salatino</strong>, Open University, UK</li>
+                <li><strong>Arianna Muti</strong>, Bocconi University, Milan, Italy</li>
                 <li><strong>Antonello Meloni</strong>, University of Cagliari, Italy</li>
-                <li><strong>Benno Kruit</strong>, Vrije Universiteit Amsterdam</li>
-                <li><strong>Bohui Zhang</strong>, King's College London, UK</li>
+                <li><strong>Beatrice Fiumanò</strong>, University of Bologna, Italy</li>
                 <li><strong>Célian Ringwald</strong>, INRIA - CNRS, France</li>
-                <li><strong>Chiara di Bonaventura</strong>, King's College London, UK</li>
-                <li><strong>Delfina Sol Martinez Pandiani</strong>, Centrum Wiskunde & Informatica, Netherlands</li>
-                <li><strong>Diego Reforgiato</strong>, University of Cagliari, Italy</li>
+                <li><strong>Cristian Santini</strong>, University of Macerata, Italy</li>
+                <li><strong>Delfina Sol Martinez Pandiani</strong>, University of Amsterdam, Netherlands</li>
+                <li><strong>Federico Pianzola</strong>, University of Groningen, Netherlands</li>
+                <li><strong>Filip Ilievski</strong>, Vrije Universiteit Amsterdam, Netherlands</li>
                 <li><strong>Gianmarco Pappacoda</strong>, University of Bologna, Italy</li>
-                <li><strong>Harald Sack</strong>, FIZ Karlsruhe, Germany</li>
+                <li><strong>Luana Bulla</strong>, University of Bologna, Italy</li>
                 <li><strong>Jan-Christoph Kalo</strong>, University of Amsterdam, Netherlands</li>
-                <li><strong>Mahsa Vafaye</strong>, FIZ Karlsruhe, Germany</li>
-                <li><strong>Nicolas Lazzari</strong>, University of Pisa/University of Bologna, Italy</li>
-                <li><strong>Rocco Tripodi</strong>, University of Venice, Italy</li>
-                <li><strong>Stefano De Giorgis</strong>, CNR Catania/University of Bologna, Italy</li>
-                <li><strong>Tabea Tietz</strong>, FIZ Karlsruhe, Germany</li>
+                <li><strong>Nicolas Lazzari</strong>, University of Pisa / University of Bologna, Italy</li>
+                <li><strong>Rossana Damiano</strong>, University of Turin, Italy</li>
+                <li><strong>Ruhi Mahadeshwar</strong>, University of Groningen, Netherlands</li>
+                <li><strong>Stefano De Giorgis</strong>, Vrije Universiteit Amsterdam, Netherlands</li>
+                <li><strong>Stella Verkijk</strong>, Vrije University Amsterdam, Netherlands</li>
+                <li><strong>Teresa Paccosi</strong>, KNAW, Amsterdam, Netherlands</li>
             </ul>
+            <p class="alert"><strong>More members to be announced.</strong></p>
         </div>
     </div>
 </section>
 
 <!-- Program Section -->
-<section class="page-section bg-light" id="program">
+<section class="page-section" id="Program">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">Program</h2>
+            <h2 class="section-heading text-uppercase">Workshop Program</h2>
         </div>
         <div class="text-content">
-            <p>The workshop program will be announced in due time.</p>
+            <p class="alert"><strong>Workshop program to be announced.</strong></p>
         </div>
     </div>
 </section>
 
+
 <!-- Keynote Speakers Section -->
-<section class="page-section bg-light" id="speakers">
+<section class="page-section" id="speakers">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Keynote Speakers</h2>
         </div>
-        <div class="text-content">
-            <p>The workshop keynote speakers will be announced in due time.</p>
+        <div class="row justify-content-center mt-5">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 my-2">
+                <div class="card text-center h-100">
+                    <div class="card-placeholder-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title"><strong>To be announced soon!</strong></h5>
+                        <p class="card-text"></p>
+                        <div class="mt-auto">
+                            <a href="#" class="btn btn-primary my-2 disabled">Webpage</a>
+                            <a href="#" class="btn btn-primary my-2 disabled">E-mail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
+
 
 <!-- Contact Section -->
 <section class="page-section" id="con">
@@ -277,7 +365,7 @@
             <h2 class="section-heading text-uppercase">Contact</h2>
         </div>
         <div class="text-content">
-            <p>For any inquiries, please contact us at: <a href="xtailworkshop@gmail.com">X-TAIL WORKSHOP E-MAIL</a></p>
+            <p>For any inquiries, please contact Lia Draetta and Arianna Graciotti at email addresses: <a href="mailto:xtailworkshop@gmail.com">xtailworkshop@gmail.com</a>.</p>
         </div>
     </div>
 </section>
@@ -286,10 +374,14 @@
 <footer class="footer py-4">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-4 text-lg-start">Copyright &copy; X-TAIL Workshop 2024</div>
+            <div class="col-lg-12 text-center text-lg-start">
+                Copyright &copy; X-TAIL Workshop 2026. Logo illustration, our beloved mascotte <em>Tailor the T-Rex</em>, is created with love by
+                <a href="https://www.instagram.com/marco_smacchia/" target="_blank">Marco Smacchia</a>. We extend our heartfelt thanks to him!
+            </div>
         </div>
     </div>
 </footer>
+
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Custom scripts-->

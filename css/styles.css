@@ -1,11 +1,11 @@
 /* General Styles */
 body {
     font-family: 'Radley', serif;
-    color: #4B3F2F; /* Dark brown */
+    color: #2A2A2A;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #EDEAE0; /* Light earthy tone */
+    background-color: #E8E8E8;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -14,9 +14,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navigation Bar */
 #mainNav {
-    background-color: #70543E; /* Medium brown */
+    background-color: #9A2A2A;
     padding: 1rem 0;
 }
+
 .navbar-brand {
     text-align: center;
     display: inline-block;
@@ -40,9 +41,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Masthead */
 .masthead {
-    background: #EDEAE0; /* Light earthy tone for contrast */
-    padding: 250px 0 100px 0; /* More padding at the top for space between navbar and masthead */
-    color: #333; /* Darker text color */
+    background: #E8E8E8;
+    padding: 200px 0 100px 0;
+    color: #2A2A2A;
     text-align: left;
     display: flex;
     align-items: center;
@@ -55,14 +56,14 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
     width: 100%;
     display: flex;
-    justify-content: center; /* Center the table horizontally */
+    justify-content: center;
 }
 
 .masthead-table {
     width: auto;
     border-spacing: 20px;
-    margin: 0 auto; /* Center the table */
-    table-layout: fixed; /* Ensure table layout is flexible */
+    margin: 0 auto;
+    table-layout: fixed;
 }
 
 .masthead-logo-cell {
@@ -73,15 +74,15 @@ h1, h2, h3, h4, h5, h6 {
 .masthead-logo {
     width: 100%;
     height: auto;
-    max-width: 10rem; /* Adjust the width to match the text */
+    max-width: 10rem;
 }
 
 .masthead-heading {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
     margin: 0;
-    white-space: normal; /* Allow text to wrap */
-    overflow: hidden; /* Ensure text does not overflow */
+    white-space: normal;
+    overflow: hidden;
 }
 
 .masthead-subheading {
@@ -92,22 +93,11 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 992px) {
     .masthead {
-        padding: 100px 0; /* More padding for smaller screens */
-    }
-
-    .masthead-table {
-        width: 100%;
-        border-spacing: 10px;
-    }
-
-    .masthead-logo {
-        height: auto;
-        max-width: 8rem; /* Adjust for smaller screens */
+        padding: 150px 0;
     }
 
     .masthead-heading {
-        font-size: 2rem;
-        white-space: normal; /* Allow text to wrap */
+        font-size: 2.5rem;
     }
 
     .masthead-subheading {
@@ -117,25 +107,25 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
     .masthead {
-        padding: 70px 0; /* More padding for smaller screens */
+        padding: 120px 0;
     }
 
     .masthead-heading {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .masthead-subheading {
-        font-size: 1rem;
+        font-size: rem;
     }
 }
 
 @media (max-width: 576px) {
     .masthead {
-        padding: 100px 0 50px 0; /* Increase padding at the top */
+        padding: 100px 0 50px 0;
     }
 
     .masthead-heading {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .masthead-subheading {
@@ -144,78 +134,237 @@ h1, h2, h3, h4, h5, h6 {
 
     .masthead-logo {
         height: auto;
-        max-width: 6rem; /* Adjust for smaller screens */
+        max-width: 6rem;
     }
 }
 
 .masthead .abstract-text {
     font-size: 1.2rem;
     font-weight: 300;
-    margin-top: 20px; /* Adjust spacing as needed */
-    color: #333; /* Adjust text color as needed */
+    margin-top: 20px;
+    color: #2A2A2A;
 }
 
 .masthead .btn {
     font-size: 1.2rem;
     padding: 10px 20px;
-    background-color: #70543E; /* Medium brown */
+    background-color: #9A2A2A;
     border: none;
     margin-top: 20px;
 }
 
 .masthead .btn:hover {
-    background-color: #4B3F2F; /* Dark brown */
+    background-color: #7A2020;
 }
 
-/* Alternating section colors */
-.page-section:nth-of-type(odd) {
-    background-color: #f8f9fa; /* Light background color */
+/* Button overrides */
+.btn-primary {
+    background-color: #9A2A2A;
+    border-color: #9A2A2A;
 }
 
-.page-section:nth-of-type(even) {
-    background-color: #EDEAE0; /* Light earthy tone */
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #7A2020;
+    border-color: #7A2020;
+}
+
+/* Ensure images in the organizing committee section are properly rescaled */
+#team .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#team .card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    margin: 20px auto 10px;
+    display: block;
+}
+
+/* Organizer placeholder icon */
+#team .card-placeholder-icon {
+    padding: 50px 0 40px 0;
+    background-color: #E0E0E0;
+    color: #9A2A2A;
+    font-size: 5rem;
+    opacity: 0.4;
 }
 
 /* Organizer cards smaller on small screens */
 @media (max-width: 576px) {
-    .card {
-        width: 100%;
+    #team .card {
+        width: 90%;
         margin-bottom: 20px;
-    }
-
-    .card-body {
         padding: 10px;
+        margin: 0 auto;
     }
 
-    .card-title {
-        font-size: 1rem;
-    }
-
-    .card-text {
-        font-size: 1rem;
-    }
-
-    .card img {
-        max-width: 60%;
+    #team .card img {
+        max-width: 80%;
         height: auto;
-    }
-
-    .btn {
-        font-size: 1rem;
-        padding: 5px 10px;
+        margin: 0 auto;
     }
 }
 
-/*pages*/
+/* Font size adjustments for better readability */
+.text-content {
+    font-size: 1.2rem;
+}
 
+/* Enhance bold text */
+.text-content strong {
+    font-weight: 700;
+    color: #1A1A1A;
+}
+
+/* Ensure alternating background colors */
+.page-section:nth-of-type(odd) {
+    background-color: #F4F4F4;
+}
+
+.page-section:nth-of-type(even) {
+    background-color: #E8E8E8;
+}
+
+/* Specific overrides to maintain correct alternating pattern */
+#Program {
+    background-color: #F4F4F4;
+}
+
+#pc {
+    background-color: #E8E8E8;
+}
+
+#speakers {
+    background-color: #F4F4F4;
+}
+
+/* Pages */
 .page-section {
-    padding: 110px 0 20px 0; /* Added 110px top padding */
+    padding: 80px 0 40px 0;
 }
 
 .bg-light {
-    background-color: #f8f9fa;
+    background-color: #F4F4F4;
 }
 
 .text-content {
     margin-top: 20px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #9A2A2A;
+    color: #fff;
+    text-align: center;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .col-lg-12 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    color: #DDB0B5;
+    text-decoration: none;
+}
+
+.alert {
+    background-color: #F5ECED;
+    color: #2A2A2A;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #C49098;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Keynote speaker image adjustments */
+.keynote-img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+/* Keynote speaker placeholder icon */
+#speakers .card-placeholder-icon {
+    padding: 50px 0 40px 0;
+    background-color: #E0E0E0;
+    color: #9A2A2A;
+    font-size: 5rem;
+    opacity: 0.4;
+}
+
+/* Keynote speaker card adjustments */
+#speakers .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#speakers .card img {
+    width: 65%;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+#speakers .card-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+#speakers .card-text {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+#speakers .btn-group .btn {
+    margin: 0 5px;
+}
+
+#speakers .collapse {
+    margin-top: 10px;
+}
+
+#speakers .card .btn {
+    margin: 5px 0;
+}
+
+#dates del {
+    color: #ff0000;
+    text-decoration: line-through;
+}
+
+#dates strong {
+    font-weight: bold;
+}
+
+.announcement {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
