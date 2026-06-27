@@ -104,9 +104,7 @@
             <h2 class="section-heading text-uppercase">About</h2>
         </div>
         <div class="text-content">
-            <p><strong>Large Language Models (LLMs)</strong> encode world knowledge through pre-training on massive datasets, making them the backbone of knowledge extraction applications. Their reliability degrades on <strong>long-tail knowledge</strong>: low-popularity knowledge that occurs infrequently in pre-training data. Popularity is <strong>not neutral</strong>: pre-training datasets are predominantly web-crawled and, as such, are generalist, English-centric, and mostly produced over the past 30 years by <strong>Western, High-income, Educated, Liberal, Male-dominated (WHELM)<sup><a href="#ref-whelm" class="footnote-ref">[1]</a></sup></strong> communities, raising the risk of models underperforming on specialized domains, non-English languages and non-contemporary times sources, and on knowledge belonging to marginalized social groups. <strong>Retrieval-Augmented Generation (RAG)</strong> has been proposed as a mitigation, but corpora used for retrieval may still be biased. <strong>Knowledge Graphs (KGs)</strong> provide a more transparent and deterministic alternative, yet open-domain KGs such as Wikidata exhibit coverage gaps along the same dimensions. The <strong>X-TAIL</strong> workshop aims to advance research on extracting, exploiting, and ultimately preserving long-tail knowledge.</p>
-            <p>The first edition of X-TAIL, co-located with EKAW 2024 in Amsterdam, was a half-day workshop. It received three submissions, all accepted after two single-blind reviews each, tackling long-tail knowledge extraction on Named Entity Recognition and Linking tasks. Methods ranged from LLM prompting to blending transformer-based encoder models with Answer Set Programming rules. Papers were published in the <a href="https://ceur-ws.org/Vol-3967/" target="_blank">Joint Proceedings of Posters, Demos, Workshops, and Tutorials of EKAW 2024</a>. The invited speaker's talk was delivered by Jan-Christoph Kalo (University of Amsterdam), with the title <em>What do Large Language Models know about the World?</em>. The invited speaker's talk notes, accepted papers, and slides can be accessed and downloaded from the <a href="2024/">previous edition webpage</a>.</p>
-            <div class="footnotes">
+            <p><strong>Large Language Models (LLMs)</strong> encode world knowledge through pre-training on massive datasets, making them the backbone of knowledge extraction applications. Their reliability degrades on <strong>long-tail knowledge</strong>: low-popularity knowledge that occurs infrequently in pre-training data. Popularity is <strong>not neutral</strong>: pre-training datasets are predominantly web-crawled and, as such, are generalist, English-centric, and mostly produced over the past 30 years by <strong>Western, High-income, Educated, Liberal, Male-dominated (WHELM)<sup><a href="#ref-whelm" class="footnote-ref">[1]</a></sup></strong> communities, raising the risk of models underperforming on specialized domains, non-English languages and non-contemporary times sources, and on knowledge belonging to marginalized social groups. <strong>Retrieval-Augmented Generation (RAG)</strong> has been proposed as a mitigation, but corpora used for retrieval may still be biased. <strong>Knowledge Graphs (KGs)</strong> provide a more transparent and deterministic alternative, yet open-domain KGs such as Wikidata exhibit coverage gaps along the same dimensions. The <strong>X-TAIL</strong> workshop aims to advance research on extracting, exploiting, and ultimately preserving long-tail knowledge.</p>            <p>The previous edition saw great engagement by the public and insightful discussion on long-tail knowledge extraction. Papers were published in the <a href="https://ceur-ws.org/Vol-3967/" target="_blank">Joint Proceedings of Posters, Demos, Workshops, and Tutorials of EKAW 2024</a>. The invited speaker's talk was delivered by Jan-Christoph Kalo (University of Amsterdam), with the title <em>What do Large Language Models know about the World?</em>. The invited speaker's talk notes, accepted papers, and slides can be accessed and downloaded from the <a href="2024/" target="_blank">previous edition webpage</a>.</p>            <div class="footnotes">
                 <p id="ref-whelm"><sup>[1]</sup> <em>Daryani, Y., Sourati, Z., & Dehghani, M. The Homogenizing Engine: AI's Role in Standardizing Culture and the Path to Policy. Policy Insights From the Behavioral and Brain Sciences. https://doi.org/10.1177/23727322251406591</em></p>
             </div>
         </div>
@@ -124,29 +122,29 @@
             <p>The main topics of interest include:</p>
             <ul>
                 <li><strong>Head and tail knowledge definition</strong>: operationalisation and computation of <strong>knowledge popularity</strong></li>
-                <li><strong>Knowledge Extraction (KE)</strong> from <strong>long-tail sources</strong>:
+                <li><strong>Knowledge Extraction</strong> from <strong>long-tail sources</strong>:
                     <ul>
-                        <li><strong>Tasks</strong>: Relation Extraction, Entity Linking, Knowledge Graph (KG) generation, Question Answering</li>
+                        <li><strong>Tasks</strong>: Relation Extraction, Entity Linking, Knowledge Graph generation, Question Answering</li>
                         <li><strong>Non-conventional source types</strong>, such as for example: domain-specific, multilingual, historical, related to marginalised social groups</li>
                         </li>
                     </ul>
                 </li>
                 <li><strong>Context-augmented methods</strong> optimised for long-tail knowledge, such as Retrieval-Augmented Generation (RAG) and Knowledge-Augmented Generation (KAG)
                 </li>
-                <li><strong>Knowledge Graph (KG) generation and completion</strong> for mitigating <strong>coverage gaps</strong> in existing knowledge bases</li>
+                <li><strong>Knowledge Graph generation and completion</strong> for mitigating <strong>coverage gaps</strong> in existing knowledge bases</li>
                 <li><strong>Computational methods</strong> for long-tail knowledge processing in <strong>specialised domains</strong>, such as Health, Law, Finance, Sustainability, Digital Humanities, Computational Literary Studies, Computational History, etc.</li>
                 <li>Impact of <strong>multilingualism</strong> on model performance on long-tail knowledge</li>
                 <li><strong>Long-tail knowledge representation</strong> in ontologies and Knowledge Graphs (KGs)</li>
-                <li><strong>Benchmarks</strong> that systematically address biases of both Large Language Models (LLMs) and Knowledge Graphs (KGs) on knowledge related, for example, to specialised domains, to low-resourced languages and cultures or marginalised social groups, and historical data.</li>
+                <li><strong>Benchmarks</strong> that systematically address biases of both Large Language Models and Knowledge Graphs on knowledge related, for example, to specialised domains, to low-resourced languages and cultures or marginalised social groups, and historical data.</li>
                 <li><strong>Error analysis</strong> of system performance stratified by knowledge popularity and its intersection with domain, language, social group, and time dimensions.</li>
                 <li><strong>Negative results</strong> on methods developed to mitigate underperformance on long-tail knowledge</li>
-                <li>Studies of <strong>harms</strong> perpetuated by popularity-driven knowledge hierarchies learned by Large Language Models (LLMs) and reflected in Knowledge Graphs (KGs)</li>
+                <li>Studies of <strong>harms</strong> perpetuated by popularity-driven knowledge hierarchies learned by Large Language Models and reflected in Knowledge Graphs </li>
             </ul>
             <p>Submission <strong>format</strong> and <strong>guidelines</strong>:</p>
             <ul>
                 <li><strong>Papers must be submitted in PDF format</strong> according to the <a href="https://www.overleaf.com/latex/templates/template-for-submissions-to-ceur-workshop-proceedings-ceur-ws-dot-org/wqyfdgftmcfw" target="_blank">CEUR-WS template</a> published in the CEUR-WS guidelines.</li>
                 <li><strong>Long papers</strong> should be <strong>up to 8 pages</strong>, excluding references.</li>
-                <li><strong>Short papers</strong> should be <strong>up to 5 pages</strong>, including references.</li>
+                <li><strong>Short papers</strong> should be <strong>up to 5 pages</strong>, excluding references.</li>
                 <li><strong>Workshop papers must be self-contained and in English.</strong></li>
                 <!--li><strong>At least one author of each accepted workshop paper has to register for the conference.</strong></li-->
                 <!--li><strong>Workshop attendance is only granted to registered conference participants.</strong></li-->
