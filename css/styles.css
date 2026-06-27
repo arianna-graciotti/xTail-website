@@ -299,6 +299,23 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
 }
 
+.footnotes {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #C49098;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.footnote-ref {
+    color: #9A2A2A;
+    text-decoration: none;
+}
+
+.footnote-ref:hover {
+    text-decoration: underline;
+}
+
 /* Keynote speaker image adjustments */
 .keynote-img {
     width: 100%;
