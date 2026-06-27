@@ -273,9 +273,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer .col-lg-12 {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
 }
 
 .footer a {
