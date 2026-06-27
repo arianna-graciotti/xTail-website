@@ -305,6 +305,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #555;
 }
 
+.footnotes p {
+    margin-bottom: 0.2rem;
+}
+
 .footnote-ref {
     color: #9A2A2A;
     text-decoration: none;
